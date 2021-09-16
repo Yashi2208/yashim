@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Pratical-10</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header
+        {
+            width: 100%;
+            height:70px;
+            background-color: #2f3640;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header img
+        {
+           width:70px;
+           height: 70px;
+           margin-right: 15px;
+        }
+        .header h1
+        {
+            color: white;
+            line-height: 70px;
+        }
+        .content 
+       {
+             width: 100%;
+             padding: 20px;
+             float: right;
+             transition: .7s;
+       }
+       .content img
+       {
+           width: 100%;
+           max-width: 700px;
+           display: block;
+           margin: auto;
+       }
+       .content p
+       {
+           padding: 20px;
+           text-align: justify;   
+       }
+       .sidebar
+       {
+           width: 20%;
+           height: 100%;
+           position: fixed;
+           top: 70px;
+           background-color: #353b48;
+           left:-100%;
+           transition: .7s;
+       }
+       .sidebar ul
+       {
+           list-style: none;
+       }
+       .sidebar ul li
+       {
+           border-bottom: 2px solid rgba( 255, 255, 255 , 0.1);
+       }
+       .sidebar ul li a
+       {
+           text-decoration: none;
+           font-size: 20px;
+           color: white;
+           display: block;
+           padding: 15px 25px;
+           transition:0.4s;
+       }
+       a i
+       {
+           margin-right: 15px;
+       }
+       .sidebar ul li a:hover
+       {
+           border-left: 10px solid white;
+       }
+       .social
+       {
+           margin-top: 340px;
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+           font-size: 30px;
+           border-bottom: 2px solid rgba( 255, 255, 255 , 0.1);
+           border-top: 2px solid rgba( 255, 255, 255 , 0.1);
+           padding: 15px 25px;
+       }
+       i
+       {
+           font-size: 30px;
+           color: white;
+       }
+       .show-btn,
+       .hide-btn
+       {
+           font-size: 35px;
+           color: white;
+           position: fixed;
+           top: 20px;
+           left: 50px;
+       }
+       .hide-btn
+       {
+           opacity: 0;
+       }
+       #chk:checked ~ .sidebar
+       {
+           left:0;
+       }
+       #chk:checked ~ .show-btn
+       {
+           opacity:0;
+       }
+       #chk:checked ~ .hide-btn
+       {
+           opacity:1;
+       }
+       #chk:checked ~ .content
+       {
+           width: 80%;
+       }
+       @media(max-width:768px)
+       {
+           .sidebar
+           {
+               width: 100%;
+               text-align: center;
+           }
+           .header h1 
+           {
+               display: none;
+           }
+       }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="./images/p13.png" alt="">
+        <h1>FULLSTACK</h1>
+    </div>
+    <input type="checkbox" name="" id="chk">
+    <label for="chk" class="show-btn">
+        <i class="fa fa-bars"></i>
+    </label>
+    <label for="chk" class="hide-btn">
+        <i class="fa fa-times"></i>
+    </label>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i><span>Home</span></a></li>
+            <li><a href="#"><i class="fa fa-user"></i><span>About</span></a></li>
+            <li><a href="#"><i class="fa fa-tasks"></i><span>Servises</span></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i><span>Blog</span></a></li>
+            <li><a href="#"><i class="fa fa-id-card"></i><span>Contact</span></a></li>
+        </ul>
+        <div class="social">
+           <a href=""><i class="fa fa-facebook-square"></i></a>
+           <a href=""><i class="fa fa-youtube-square"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="content">
+        <img src="./images/p14.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae dolores non neque tempora. Nulla, officia at! Eaque libero omnis nostrum labore aliquam perferendis odio deleniti ut. Ipsam magni quibusdam ab nihil non possimus distinctio earum quos alias excepturi rem totam, esse expedita explicabo deleniti placeat dolores quaerat perspiciatis quidem sint. A eius natus fugiat ducimus praesentium atque facere totam aliquam itaque libero placeat obcaecati, ad cum dolorem mollitia. Sapiente doloribus similique placeat ad, deleniti quibusdam est itaque quia, deserunt debitis laboriosam eveniet numquam repellendus architecto, harum fugiat consequatur eaque commodi? Aliquid hic commodi, natus itaque tenetur deserunt quaerat, error voluptatem reprehenderit reiciendis non ratione ea, dolores unde architecto? Qui, officia aliquam accusamus nobis ea modi dolore eaque veniam doloribus similique veritatis esse? Omnis rerum, deleniti asperiores similique, nostrum facere tempore earum ab officiis quasi necessitatibus quis, placeat molestias in quia ad inventore modi? Repellendus, dignissimos illo repudiandae autem expedita nulla voluptatibus incidunt facere tempore temporibus blanditiis, quidem ut alias doloribus atque. Perspiciatis vel praesentium, dolorem eos consequatur maxime facere tempora aperiam ullam fugiat aliquam. Unde ipsa cupiditate ipsum provident consectetur officia deleniti iure, molestiae suscipit nobis saepe tempora rem voluptates repellendus maiores natus? Provident, assumenda asperiores nostrum voluptatibus tempore totam omnis natus voluptates doloribus explicabo deserunt dolore expedita aperiam, ad facere corporis magnam. Hic necessitatibus optio impedit omnis perferendis dolorem, adipisci sit, praesentium ab iusto laborum aliquam voluptatem corporis labore consequatur molestias, cumque deleniti soluta est! Quas quasi beatae dicta ipsam nisi esse fugit facilis quo molestiae expedita totam ducimus, id commodi dolorem minus possimus iste laudantium exercitationem error architecto. Cumque exercitationem tempore aperiam adipisci explicabo omnis modi dolorum aliquam. Amet, dolorum facilis quas in eius nobis provident veritatis et libero tempora error odio aut. Molestias laboriosam repudiandae id soluta unde earum saepe iure eligendi non sint labore odio nisi neque voluptatem eum aut obcaecati cum doloribus, odit corrupti consequuntur libero numquam. Fuga in facere, voluptatum nostrum cumque similique veniam beatae, alias natus iste perferendis dignissimos voluptatibus blanditiis eaque assumenda quisquam voluptate eum, consequatur quos a adipisci vitae commodi? Harum porro veritatis, possimus autem iste est eligendi, vero commodi praesentium magni architecto molestiae error dolor nisi, dolorum soluta nam eum. Ullam excepturi labore corrupti dicta maiores modi ipsa perspiciatis exercitationem autem, numquam nemo explicabo eos a laborum! Eos neque quisquam iure in officiis voluptatum minima quaerat aperiam? Assumenda reprehenderit necessitatibus inventore dignissimos odit. Praesentium excepturi ipsum labore cupiditate a, doloremque fuga commodi voluptates ut, libero voluptatum sed natus eum. Qui adipisci aliquid dolorem nihil numquam quos eligendi nostrum deleniti animi iure illum, rerum eius, similique totam fugiat praesentium aperiam consequuntur consequatur voluptate laboriosam itaque! Repellendus recusandae doloremque quisquam pariatur corporis suscipit sequi amet! Ut ducimus, facilis dignissimos earum minima labore reiciendis eius veritatis iure, iste aperiam asperiores illum delectus? Dignissimos sint esse temporibus non dolor alias iusto? Expedita architecto aperiam quisquam quasi. Et dolores quia cumque reiciendis sit ratione commodi doloribus architecto, omnis nihil corporis, adipisci maiores enim recusandae impedit aut, fugiat veniam. Voluptatem temporibus libero error porro magni?</p>
+    </div>
+</body>
+</html>
