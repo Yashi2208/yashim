@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Assignment-13</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 100vh;
+        background-color: white;
+    }
+
+    table {
+        background-color: white;
+        padding: 5px;
+        width: 45%;
+    }
+
+    thead tr th {
+        color: black;
+        height: 30px;
+        font-size: 25px;
+        text-transform: uppercase;
+        background-color: white;
+        padding: 5px;
+    }
+
+
+
+    td {
+        text-align: center;
+        padding: 8px 10px;
+    }
+
+    i {
+        margin-right: 10px;
+    }
+
+    thead tr:last-child {
+
+        font-weight: 700;
+        height: 70px;
+        font-size: 30px;
+        color: #51417e;
+    }
+
+
+    tbody tr:nth-child(odd) {
+        background-color: rgb(232, 248, 234);
+    }
+
+    tbody tr:first-child {
+        color: green;
+        font-size: 20px;
+    }
+
+    img {
+        width: 15px;
+        height: 15px;
+    }
+
+    tfoot tr {
+        line-height: 60px;
+    }
+
+    a {
+        text-decoration: none;
+        background-color: #51417e;
+        color: white;
+        font-size: 20px;
+        padding: 15px 30px;
+        border-radius: 10px;
+    }
+
+    a:hover {
+
+        background-color: red;
+
+    }
+
+    .Basic {
+        background-color: rgb(184, 235, 191);
+
+    }
+
+    .Plus {
+        background-color: rgb(154, 218, 163);
+
+    }
+
+    .Delux {
+        background-color: rgb(173, 198, 221);
+
+    }
+
+    .Pro {
+        background-color: rgb(150, 182, 212);
+
+    }
+</style>
+
+<body>
+    <table>
+        <colgroup class="Basic"></colgroup>
+        <colgroup class="Plus"></colgroup>
+        <colgroup class="Delux"></colgroup>
+        <colgroup class="Pro"></colgroup>
+        <thead>
+            <tr>
+                <th colspan="4">
+                    Select your Plan
+                </th>
+            </tr>
+            <tr>
+                <td><i class="fa fa-building"></i>Basic</td>
+                <td><i class="fa fa-superpowers"></i>Plus</td>
+                <td><i class="fa fa-telegram"></i>Deluxe</td>
+                <td><i class="fa fa-tachometer"></i>Pro</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rs. 500/-</td>
+                <td>Rs. 1500/-</td>
+                <td>Rs. 2500/-</td>
+                <td>Rs. 3500/-</td>
+            </tr>
+            <tr>
+                <td>50 pages</td>
+                <td>75 pages</td>
+                <td>Unlimited</td>
+                <td>Unlimited</td>
+            </tr>
+            <tr>
+                <td>3 users</td>
+                <td>5 users</td>
+                <td>10 users</td>
+                <td>Unlimited</td>
+            </tr>
+            <tr>
+                <td>10 Sites</td>
+                <td>25 Sites</td>
+                <td>100 Sites</td>
+                <td>Unlimited</td>
+            </tr>
+            <tr>
+                <td>50 MB</td>
+                <td>250 MB</td>
+                <td>1 GB</td>
+                <td>5GB</td>
+            </tr>
+            <tr>
+                <td>included</td>
+                <td>included</td>
+                <td>included</td>
+                <td>included</td>
+            </tr>
+            <tr>
+                <td><img src="images/tick.png" alt=""></td>
+                <td><img src="images/tick.png" alt=""></td>
+                <td><img src="images/tick.png" alt=""></td>
+                <td><img src="images/tick.png" alt=""></td>
+
+            </tr>
+            <tr>
+                <td><img src="images/wrong.svg" alt=""></td>
+                <td><img src="images/tick.png" alt=""></td>
+                <td><img src="images/tick.png" alt=""></td>
+                <td><img src="images/tick.png" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="images/wrong.svg" alt=""></td>
+                <td><img src="images/tick.png" alt=""></td>
+                <td><img src="images/tick.png" alt=""></td>
+                <td><img src="images/tick.png" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="images/wrong.svg" alt=""></td>
+                <td><img src="images/wrong.svg" alt=""></td>
+                <td><img src="images/tick.png" alt=""></td>
+                <td><img src="images/tick.png" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="images/wrong.svg" alt=""></td>
+                <td><img src="images/wrong.svg" alt=""></td>
+                <td><img src="images/wrong.svg" alt=""></td>
+                <td><img src="images/tick.png" alt=""></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><a href="#">Sign Up</a></td>
+                <td><a href="#">Sign Up</a></td>
+                <td><a href="#">Sign Up</a></td>
+                <td><a href="#">Sign Up</a></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
