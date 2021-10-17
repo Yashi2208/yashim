@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-14</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            color: black;
+        }
+
+        body {
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            text-align: center;
+        }
+
+        #btn1 {
+            background-color:skyblue;
+            margin-right: 38px;
+            width: 40px;
+            height: 40px;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        #btn2 {
+            background-color: skyblue;
+            display: inline;
+            width: 40px;
+            height: 40px;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        #value {
+            display: inline;
+            padding-left: 20px;
+            padding-right: 50px;
+            background: none;
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>COUNTER</h1>
+    <div id="container">
+        <button id="btn1">-</button>
+        <div id="value"></div>
+        <button id="btn2">+</button>
+    </div>
+
+    <script>
+        var a = 0;
+        var button1 = document.getElementById("btn1");
+        var number = document.getElementById("value");
+        number.innerHTML = a;
+        var button2 = document.getElementById("btn2");
+        btn1.disabled = true;
+        button1.onclick = function () {
+            a = a - 1;
+            number.innerHTML = a;
+            if (a == 0 || a < 0) {
+                button1.disabled = true;
+            }
+            else {
+                button1.disabled = false;
+            }
+        };
+        button2.onclick = function () {
+            a = a + 1;
+            number.innerHTML = a;
+            if (a == 0 || a < 0) {
+                button1.disabled = true;
+            }
+            else {
+                button1.disabled = false;
+            }
+        };
+    </script>
+</body>
+
+</html>
